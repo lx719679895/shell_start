@@ -3,20 +3,20 @@
 ### 1、test1.sh
 
 打开shell世界的大门
-### 2、var.sh
+### 2、variable.sh
 
 变量的最基本使用，定义一个name变量并输出
-### 3、var2.sh
+### 3、variable2.sh
 
 定义一个变量，输出当前时间，要求格式为“年-月-日 时:分:秒”
 
-### 4、var3.sh
+### 4、variable3.sh
 
 只读变量（了解）
 
 语法：readonly 变量名
 
-### 5、var4.sh
+### 5、variable4.sh
 
 接受用户输入
 
@@ -24,13 +24,13 @@
 
 案例：编写一个脚本，要求执行之后提示用户输入文件的名称（路径），然后自动为用户创建该文件
 
-### 6、var5.sh
+### 6、variable5.sh
 
 删除变量（了解）
 
 语法：unset 变量名
 
-### 7、if.sh
+### 7、condition.sh
 
 条件判断语句
 
@@ -87,3 +87,13 @@
 | -w file | 检测文件是否可写，是则返回true               | [ -w $file ] |
 | -x file | 检测文件是否可执行，是则返回true             | [ -x $file ] |
 | -e file | 检测文件（包括目录）是否存在，存在则返回true | [ -e $file ] |
+
+### 13、option.sh
+
+shell脚本附带选项
+
+```shell
+#./option.sh a b c
+在脚本中可以用"$1"表示a，"$2"表示b，以此类推。
+```
+
